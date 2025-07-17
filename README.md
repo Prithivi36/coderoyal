@@ -1,12 +1,35 @@
-# React + Vite
+# CodeBattle - Phase 1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collaborative coding battle platform where users can log in, solve problems solo or with friends, and communicate via voice — all in real-time.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: React.js, Tailwind CSS, WebRTC
+- **Backend**: Node.js (Express) + Spring Boot (Microservices)
+- **Database**: MongoDB (for user profiles & code history)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Phase 1 Modules
+
+### 🔐 Authentication & Profiles
+- User signup/login
+- Profile page (name, avatar, stats)
+
+### 🎯 Practice Arena
+- Solo or collaborative problem-solving
+- Real-time matchmaking (no algorithm, just room fill)
+
+### 💻 Code Editor
+- Syntax highlighted editor (Monaco)
+- Submit code (dummy execution for now)
+
+### 🎙️ Voice Communication
+- WebRTC peer-to-peer calling in room
+- Mute/unmute option
+
+### 🤝 Friends & Invites
+- Add/remove friends
+- Invite to practice or battle
+
+---
