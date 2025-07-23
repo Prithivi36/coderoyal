@@ -9,11 +9,11 @@ function initializeClient() {
     setupEventListeners();
 }
 
-async function joinChannel(channel) {
+async function joinChannel(channel,token) {
     await client.join(
         'a93ba219be3f40749b249260dea5b140',
-        'coderoyal',
-        '007eJxTYEjM1p5W91ZdRvvB1pB0R9vajddNLy5deeE0r7rHNOadVwQVGBItjZMSjQwtk1KN00wMzE0sk4xMLI3MDFJSE02TDE0MkjTqMxoCGRmSVvCyMDJAIIjPyZCcn5JalF+ZmMPAAACHyh+e',
+        channel,
+        token,
         0 
     );
     await createMicrophoneAudioTrack();
@@ -55,7 +55,9 @@ const Audio = () => {
 
     useEffect(() => {
         initializeClient();
-        joinChannel();
+        joinChannel('coderoyal',
+        '007eJxTYFBQqLkUvmhHxqT4dTorlZqXz8nxcQs4Nonv+euKY1WnCrYpMCRaGiclGhlaJqUap5kYmJtYJhmZWBqZGaSkJpomGZoY7KluyGgIZGS4K7WJhZEBAkF8Tobk/JTUovzKxBwGBgAUGCI0 ',
+        );
 
         // Clean up when component is unmounted
         return () => {
@@ -76,10 +78,8 @@ const Audio = () => {
 
     return (
         <div>
-            <h1>Agora Audio Streaming</h1>
-            <p>Your audio will be streamed live to others in the channel.</p>
-            <button onClick={toggleAudio}>
-                {isMuted ? 'Unmute' : 'Mute'}
+            <button className='btn btn-none' onClick={toggleAudio}>
+                {isMuted ? <i className="bi bi-mic-mute-fill text-danger"></i> : <i className="bi bi-mic-fill text-primary"></i> }
             </button>
         </div>
     );

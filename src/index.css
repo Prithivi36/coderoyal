@@ -1,0 +1,17 @@
+.bg-gray{
+    background-color:rgb(230, 224, 224)
+}
+.tabs {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #e9e8e8;
+  padding: 10px;
+}
+.q {
+  scrollbar-width: none;   
+  -ms-overflow-style: none; 
+}
+
+.q::-webkit-scrollbar {
+  display: none;
+}

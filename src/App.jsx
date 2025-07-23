@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import Audio from './components/audio/Audio'
+// import Audio from './components/audio/Audio'
+import Editor from './components/editor/Editor'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       {/* <Audio /> */}
+      <Editor />
     </>
   )
 }
