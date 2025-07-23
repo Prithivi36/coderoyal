@@ -4,7 +4,7 @@ import Audio from "../audio/Audio";
 
 export default function CodeEditor() {
   const [language, setLanguage] = useState("java");
-  const [code, setCode] = useState("// Write your code here");
+  const [code, setCode] = useState("public class Main {\n  public static void main(String[] args) {\n    // Write your Java code here\n  }\n}");
 
   const handleLanguageChange = (e) => {
     const newLang = e.target.value;
